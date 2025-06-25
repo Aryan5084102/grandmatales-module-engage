@@ -19,7 +19,7 @@ const FeedbackForm = () => {
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto">
+    <div className="px-5 py-3 max-w-md mx-auto">
       <h1 className="font-serif text-2xl mb-4">We’d love your feedback!</h1>
       {submitted ? (
         <p className="text-green-600">Thanks for your input!</p>
@@ -30,7 +30,7 @@ const FeedbackForm = () => {
             placeholder="My favourite bedtime story is…"
             value={form.story}
             onChange={handleChange}
-            className="w-full border p-2"
+            className="w-full border p-2 mb-4"
             required
           />
           <input
@@ -38,7 +38,7 @@ const FeedbackForm = () => {
             placeholder="Suggest a prize you’d love to win"
             value={form.prize}
             onChange={handleChange}
-            className="w-full border p-2"
+            className="w-full border p-2 mb-4"
             required
           />
           <button type="submit" className="bg-[#D4AF37] text-black px-4 py-2 rounded-lg">
